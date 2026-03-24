@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+		<!--Custom CSS -->
+		<link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+
+		{% if title %}
+		<title> Flask Blog - {{ title }}</title>
+		{% else %}
+		<title>Title</title>
+		{% endif %}
+</head>
+<body>
+<header>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<div class="container">
+						<a class="navbar-brand" href="/">Inklings</a>
+						<div class="collapse navbar-collapse" id="navbarToggle">
+								<ul class="navbar-nav me-auto">
+										<li class="nav-item">
+												<a class="nav-link" href="/">Home</a>
+										</li>
+										<li class="nav-item">
+												<a class="nav-link" href="/about">About</a>
+										</li>
+								</ul>
+
+								<!-- Navbar Right Side -->
+								<div class="d-flex gap-2">
+										<a href="/login" class="btn btn-outline-light btn-sm">Login</a>
+										<a href="/register" class="btn btn-light btn-sm">Register</a>
+								</div>
+						</div>
+				</div>
+		</nav>
+</header>
+
+<div class="container mt-4">
+		<div class="row">
+
+				<!-- Main content -->
+				<main class="col-lg-8">
+						{% block content %}{% endblock %}
+				</main>
+
+				<!-- Sidebar -->
+				<aside class="col-lg-4">
+
+						<!-- Latest Posts -->
+						<div class="card mb-4">
+								<div class="card-header">Latest Posts</div>
+								<ul class="list-group list-group-flush">
+										{% for post in latest_posts %}
+										<li class="list-group-item">
+												<a href="/post/{{ post.id }}">{{ post.title }}</a>
+												<small class="text-muted d-block">{{ post.author }}</small>
+										</li>
+										{% endfor %}
+								</ul>
+						</div>
+
+						<!-- Announcements -->
+						<div class="card mb-4">
+								<div class="card-header">Announcements</div>
+								<div class="card-body">
+										{% for announcement in announcements %}
+										<p class="mb-2">{{ announcement.text }}</p>
+										{% endfor %}
+								</div>
+						</div>
+
+						<!-- Top Writers -->
+						<div class="card mb-4">
+								<div class="card-header">Top Writers</div>
+								<ul class="list-group list-group-flush">
+										{% for writer in top_writers %}
+										<li class="list-group-item d-flex justify-content-between">
+												<a href="/user/{{ writer.username }}">{{ writer.username }}</a>
+												<span class="badge bg-secondary">{{ writer.post_count }} posts</span>
+										</li>
+										{% endfor %}
+								</ul>
+						</div>
+
+						<!-- Writing Prompt -->
+						<div class="card mb-4 border-primary">
+								<div class="card-header bg-primary text-white">Writing Prompt of the Day</div>
+								<div class="card-body">
+										<p class="fst-italic">{{ daily_prompt }}</p>
+										<a href="/new-post" class="btn btn-primary btn-sm">Write now</a>
+								</div>
+						</div>
+
+						<!-- Popular Tags -->
+						<div class="card mb-4">
+								<div class="card-header">Popular Tags</div>
+								<div class="card-body">
+										{% for tag in popular_tags %}
+										<a href="/tag/{{ tag.name }}" class="badge bg-secondary text-decoration-none me-1">{{ tag.name
+												}}</a>
+										{% endfor %}
+								</div>
+						</div>
+				</aside>
+		</div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center text-muted py-4 mt-5 border-top">
+		<small>Inklings © 2026</small>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+				integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+				crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+				integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+				crossorigin="anonymous"></script>
+</body>
+</html>
