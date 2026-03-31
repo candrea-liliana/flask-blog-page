@@ -1,21 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/forms.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" />
+    <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="Create a DB and structure the app to act as a package.&#10;Models.py creates classes for User, Post table. &#10;Create a SQLAlchemy DB locally: site.db.&#10;Refactor the app to have a Package structure: __init__.py.&#10;Split the logic to specific files.">
+      <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,12 +123,21 @@
       <option name="project" value="LOCAL" />
       <updated>1774362627508</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Create a DB and structure the app to act as a package.&#10;Models.py creates classes for User, Post table. &#10;Create a SQLAlchemy DB locally: site.db.&#10;Refactor the app to have a Package structure: __init__.py.&#10;Split the logic to specific files.">
+      <option name="closed" value="true" />
+      <created>1774968417831</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1774968417831</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit.&#10;Add basic routing and templates" />
     <MESSAGE value="Added templates structure. &#10;Navbar, main content, sidebar for updates. Buttons for register and login. &#10;Render dynamic dummy content. &#10;Added some basic .css styling." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added templates structure. &#10;Navbar, main content, sidebar for updates. Buttons for register and login. &#10;Render dynamic dummy content. &#10;Added some basic .css styling." />
+    <MESSAGE value="Create a DB and structure the app to act as a package.&#10;Models.py creates classes for User, Post table. &#10;Create a SQLAlchemy DB locally: site.db.&#10;Refactor the app to have a Package structure: __init__.py.&#10;Split the logic to specific files." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create a DB and structure the app to act as a package.&#10;Models.py creates classes for User, Post table. &#10;Create a SQLAlchemy DB locally: site.db.&#10;Refactor the app to have a Package structure: __init__.py.&#10;Split the logic to specific files." />
   </component>
 </project>
