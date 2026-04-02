@@ -3,3 +3,5 @@ email-validator
 Flask-WTF
 secrets
 flask-sqlalchemy
+flask-bcrypt
+flask-login
