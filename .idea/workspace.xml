@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="Fix commit">
-      <change afterPath="$PROJECT_DIR$/flaskblog/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/flaskblog/static/profile_images/default.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/instance/site.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/static/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/account.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,9 +61,15 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/candr/PycharmProjects/FlaskBlogProject/flaskblog/static/profile_images&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\candr\PycharmProjects\FlaskBlogProject\flaskblog\static\profile_images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="FlaskBlogProject" />
@@ -151,7 +155,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774968632668</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Create an authentication system using flask-bcrypt and flask-login extensions.&#10;The user can log in and log out from application.&#10;Save the User data to DB. Create hashed passwords for secure storage.  &#10;Make sure the User don't already exist in DB by verifying the username and email data - in RegistrationForms.&#10;Add logout and account routes.&#10;Create an 'Account' template. &#10;Check if the current user is authenticated and add restrictions.&#10;Change the right side navigation if it has a current user authenticated to show 'Login' and 'Account' options.">
+      <option name="closed" value="true" />
+      <created>1775140340675</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1775140340675</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,6 +171,7 @@
     <MESSAGE value="Added templates structure. &#10;Navbar, main content, sidebar for updates. Buttons for register and login. &#10;Render dynamic dummy content. &#10;Added some basic .css styling." />
     <MESSAGE value="Create a DB and structure the app to act as a package.&#10;Models.py creates classes for User, Post table. &#10;Create a SQLAlchemy DB locally: site.db.&#10;Refactor the app to have a Package structure: __init__.py.&#10;Split the logic to specific files." />
     <MESSAGE value="Fix commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix commit" />
+    <MESSAGE value="Create an authentication system using flask-bcrypt and flask-login extensions.&#10;The user can log in and log out from application.&#10;Save the User data to DB. Create hashed passwords for secure storage.  &#10;Make sure the User don't already exist in DB by verifying the username and email data - in RegistrationForms.&#10;Add logout and account routes.&#10;Create an 'Account' template. &#10;Check if the current user is authenticated and add restrictions.&#10;Change the right side navigation if it has a current user authenticated to show 'Login' and 'Account' options." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create an authentication system using flask-bcrypt and flask-login extensions.&#10;The user can log in and log out from application.&#10;Save the User data to DB. Create hashed passwords for secure storage.  &#10;Make sure the User don't already exist in DB by verifying the username and email data - in RegistrationForms.&#10;Add logout and account routes.&#10;Create an 'Account' template. &#10;Check if the current user is authenticated and add restrictions.&#10;Change the right side navigation if it has a current user authenticated to show 'Login' and 'Account' options." />
   </component>
 </project>
