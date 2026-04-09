@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/flaskblog/templates/create_post.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/templates/post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="Create, Update and Delete blog posts. &#10;Build a user interface for creating posts and updating the existing ones, including input validation. &#10;Implement user-specific post pages. &#10;Delete posts using a Bootstrap Modal.">
       <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775654780632</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Create, Update and Delete blog posts. &#10;Build a user interface for creating posts and updating the existing ones, including input validation. &#10;Implement user-specific post pages. &#10;Delete posts using a Bootstrap Modal.">
+      <option name="closed" value="true" />
+      <created>1775731842329</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1775731842330</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -181,6 +182,7 @@
     <MESSAGE value="Fix commit" />
     <MESSAGE value="Create an authentication system using flask-bcrypt and flask-login extensions.&#10;The user can log in and log out from application.&#10;Save the User data to DB. Create hashed passwords for secure storage.  &#10;Make sure the User don't already exist in DB by verifying the username and email data - in RegistrationForms.&#10;Add logout and account routes.&#10;Create an 'Account' template. &#10;Check if the current user is authenticated and add restrictions.&#10;Change the right side navigation if it has a current user authenticated to show 'Login' and 'Account' options." />
     <MESSAGE value="Update Account Info&#10;Populate fields with user's info.&#10;Update the user info and save it to DB.&#10;Profile picture - have a default image.&#10;User can set a custom picture. The picture is saved as a random hex named image file (using secrets package). &#10;The valid format accepted are JPG and PNG.&#10;The image is resized (using Pillow package) and saved to the path /static/profile_images." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Account Info&#10;Populate fields with user's info.&#10;Update the user info and save it to DB.&#10;Profile picture - have a default image.&#10;User can set a custom picture. The picture is saved as a random hex named image file (using secrets package). &#10;The valid format accepted are JPG and PNG.&#10;The image is resized (using Pillow package) and saved to the path /static/profile_images." />
+    <MESSAGE value="Create, Update and Delete blog posts. &#10;Build a user interface for creating posts and updating the existing ones, including input validation. &#10;Implement user-specific post pages. &#10;Delete posts using a Bootstrap Modal." />
+    <option name="LAST_COMMIT_MESSAGE" value="Create, Update and Delete blog posts. &#10;Build a user interface for creating posts and updating the existing ones, including input validation. &#10;Implement user-specific post pages. &#10;Delete posts using a Bootstrap Modal." />
   </component>
 </project>
