@@ -12,7 +12,7 @@
 		{% if title %}
 		<title> Flask Blog - {{ title }}</title>
 		{% else %}
-		<title>Title</title>
+		<title>Inklings</title>
 		{% endif %}
 </head>
 <body>
@@ -34,6 +34,7 @@
 										<!-- Navbar Right Side -->
 										<div class="d-flex gap-2">
 												{% if current_user.is_authenticated %}
+														<a href="{{ url_for('new_post') }}" class="btn btn-outline-light btn-sm">New Post</a>
 														<a href="{{ url_for('account') }}" class="btn btn-outline-light btn-sm">Account</a>
 														<a href="{{ url_for('logout') }}" class="btn btn-outline-light btn-sm">Logout</a>
 												{% else %}

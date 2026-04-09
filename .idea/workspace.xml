@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/flaskblog/static/profile_images/default.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/templates/create_post.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/templates/post.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/static/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/static/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/account.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/account.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775140340675</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Update Account Info&#10;Populate fields with user's info.&#10;Update the user info and save it to DB.&#10;Profile picture - have a default image.&#10;User can set a custom picture. The picture is saved as a random hex named image file (using secrets package). &#10;The valid format accepted are JPG and PNG.&#10;The image is resized (using Pillow package) and saved to the path /static/profile_images.">
+      <option name="closed" value="true" />
+      <created>1775654780632</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1775654780632</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,6 +180,7 @@
     <MESSAGE value="Create a DB and structure the app to act as a package.&#10;Models.py creates classes for User, Post table. &#10;Create a SQLAlchemy DB locally: site.db.&#10;Refactor the app to have a Package structure: __init__.py.&#10;Split the logic to specific files." />
     <MESSAGE value="Fix commit" />
     <MESSAGE value="Create an authentication system using flask-bcrypt and flask-login extensions.&#10;The user can log in and log out from application.&#10;Save the User data to DB. Create hashed passwords for secure storage.  &#10;Make sure the User don't already exist in DB by verifying the username and email data - in RegistrationForms.&#10;Add logout and account routes.&#10;Create an 'Account' template. &#10;Check if the current user is authenticated and add restrictions.&#10;Change the right side navigation if it has a current user authenticated to show 'Login' and 'Account' options." />
-    <option name="LAST_COMMIT_MESSAGE" value="Create an authentication system using flask-bcrypt and flask-login extensions.&#10;The user can log in and log out from application.&#10;Save the User data to DB. Create hashed passwords for secure storage.  &#10;Make sure the User don't already exist in DB by verifying the username and email data - in RegistrationForms.&#10;Add logout and account routes.&#10;Create an 'Account' template. &#10;Check if the current user is authenticated and add restrictions.&#10;Change the right side navigation if it has a current user authenticated to show 'Login' and 'Account' options." />
+    <MESSAGE value="Update Account Info&#10;Populate fields with user's info.&#10;Update the user info and save it to DB.&#10;Profile picture - have a default image.&#10;User can set a custom picture. The picture is saved as a random hex named image file (using secrets package). &#10;The valid format accepted are JPG and PNG.&#10;The image is resized (using Pillow package) and saved to the path /static/profile_images." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Account Info&#10;Populate fields with user's info.&#10;Update the user info and save it to DB.&#10;Profile picture - have a default image.&#10;User can set a custom picture. The picture is saved as a random hex named image file (using secrets package). &#10;The valid format accepted are JPG and PNG.&#10;The image is resized (using Pillow package) and saved to the path /static/profile_images." />
   </component>
 </project>
