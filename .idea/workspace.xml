@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/flaskblog/templates/user_posts.html" afterDir="false" />
+    <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="Some pagination&#10;Add page interation for showing posts (show th number of 3 posts).&#10;Sort posts based on the newest ones.&#10;Add a new template for user posts. Navigation by click-ing the post's author name.&#10;Create a new route to filter the posts by author and list them.">
+      <change afterPath="$PROJECT_DIR$/flaskblog/templates/reset_request.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/templates/reset_token.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flaskblog/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/post.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/post.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +188,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775731988558</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Some pagination&#10;Add page interation for showing posts (show th number of 3 posts).&#10;Sort posts based on the newest ones.&#10;Add a new template for user posts. Navigation by click-ing the post's author name.&#10;Create a new route to filter the posts by author and list them.">
+      <option name="closed" value="true" />
+      <created>1776694130663</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1776694130663</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -197,6 +208,7 @@
     <MESSAGE value="Update Account Info&#10;Populate fields with user's info.&#10;Update the user info and save it to DB.&#10;Profile picture - have a default image.&#10;User can set a custom picture. The picture is saved as a random hex named image file (using secrets package). &#10;The valid format accepted are JPG and PNG.&#10;The image is resized (using Pillow package) and saved to the path /static/profile_images." />
     <MESSAGE value="Create, Update and Delete blog posts. &#10;Build a user interface for creating posts and updating the existing ones, including input validation. &#10;Implement user-specific post pages. &#10;Delete posts using a Bootstrap Modal." />
     <MESSAGE value="Delete Secret" />
-    <option name="LAST_COMMIT_MESSAGE" value="Delete Secret" />
+    <MESSAGE value="Some pagination&#10;Add page interation for showing posts (show th number of 3 posts).&#10;Sort posts based on the newest ones.&#10;Add a new template for user posts. Navigation by click-ing the post's author name.&#10;Create a new route to filter the posts by author and list them." />
+    <option name="LAST_COMMIT_MESSAGE" value="Some pagination&#10;Add page interation for showing posts (show th number of 3 posts).&#10;Sort posts based on the newest ones.&#10;Add a new template for user posts. Navigation by click-ing the post's author name.&#10;Create a new route to filter the posts by author and list them." />
   </component>
 </project>
