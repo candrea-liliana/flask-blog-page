@@ -24,22 +24,22 @@
 								<div class="collapse navbar-collapse" id="navbarToggle">
 										<ul class="navbar-nav me-auto">
 												<li class="nav-item">
-														<a class="nav-link" href="{{ url_for('home') }}">Home</a>
+														<a class="nav-link" href="{{ url_for('main.home') }}">Home</a>
 												</li>
 												<li class="nav-item">
-														<a class="nav-link" href="{{ url_for('about') }}">About</a>
+														<a class="nav-link" href="{{ url_for('main.about') }}">About</a>
 												</li>
 										</ul>
 
 										<!-- Navbar Right Side -->
 										<div class="d-flex gap-2">
 												{% if current_user.is_authenticated %}
-														<a href="{{ url_for('new_post') }}" class="btn btn-outline-light btn-sm">New Post</a>
-														<a href="{{ url_for('account') }}" class="btn btn-outline-light btn-sm">Account</a>
-														<a href="{{ url_for('logout') }}" class="btn btn-outline-light btn-sm">Logout</a>
+														<a href="{{ url_for('posts.new_post') }}" class="btn btn-outline-light btn-sm">New Post</a>
+														<a href="{{ url_for('users.account') }}" class="btn btn-outline-light btn-sm">Account</a>
+														<a href="{{ url_for('users.logout') }}" class="btn btn-outline-light btn-sm">Logout</a>
 												{% else %}
-														<a href="{{ url_for('login') }}" class="btn btn-outline-light btn-sm">Login</a>
-														<a href="{{ url_for('register') }}" class="btn btn-light btn-sm">Register</a>
+														<a href="{{ url_for('users.login') }}" class="btn btn-outline-light btn-sm">Login</a>
+														<a href="{{ url_for('users.register') }}" class="btn btn-light btn-sm">Register</a>
 												{% endif %}
 										</div>
 								</div>
