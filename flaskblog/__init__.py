@@ -8,21 +8,28 @@ from flaskblog.config import Config
 
 load_dotenv()
 
-app = Flask(__name__)
-app.config.from_object(Config)
-
-db = SQLAlchemy(app) # Set a DB instance
-bcrypt = Bcrypt(app) # Set an encrypting instance
-login_manager = LoginManager(app) # Set a Login manager instance
+db = SQLAlchemy() # Set a DB instance
+bcrypt = Bcrypt() # Set an encrypting instance
+login_manager = LoginManager() # Set a Login manager instance
 login_manager.login_view = 'users.login' # Set the login manager by the login view
 login_manager.login_message_category = 'info'
 
-mail = Mail(app)
+mail = Mail()
 
-from flaskblog.main.routes import main
-from flaskblog.users.routes import users
-from flaskblog.posts.routes import posts
+def create_app(config_class=Config):
+    app = Flask(__name__)
+    app.config.from_object(Config)
 
-app.register_blueprint(main)
-app.register_blueprint(users)
-app.register_blueprint(posts)
+    db.init_app(app)
+    bcrypt.init_app(app)
+    login_manager.init_app(app)
+    mail.init_app(app)
+
+    from flaskblog.main.routes import main
+    from flaskblog.users.routes import users
+    from flaskblog.posts.routes import posts
+    app.register_blueprint(main)
+    app.register_blueprint(users)
+    app.register_blueprint(posts)
+
+    return app
