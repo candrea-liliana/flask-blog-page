@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="Some pagination&#10;Add page interation for showing posts (show th number of 3 posts).&#10;Sort posts based on the newest ones.&#10;Add a new template for user posts. Navigation by click-ing the post's author name.&#10;Create a new route to filter the posts by author and list them.">
-      <change afterPath="$PROJECT_DIR$/flaskblog/templates/reset_request.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flaskblog/templates/reset_token.html" afterDir="false" />
+    <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="Application Factory Pattern&#10;Wrap the application creation inside a function (create_app()).">
+      <change afterPath="$PROJECT_DIR$/flaskblog/main/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/posts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/users/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/templates/user_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/user_posts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/users/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/users/utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -69,6 +66,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\candr\PycharmProjects\FlaskBlogProject\flaskblog\static\profile_images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\candr\PycharmProjects\FlaskBlogProject\flaskblog" />
     </key>
   </component>
   <component name="RunManager">
@@ -196,7 +196,39 @@
       <option name="project" value="LOCAL" />
       <updated>1776694130663</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Reset Password Via Email&#10;Use Flask-mail and itsdangerous packages.&#10;Add reset password request templates, forms and routes.&#10;Generate reset tokens with itsdangerous pkg that expires. &#10;Use Flask-mail to configure a gmail server.&#10;Generate an APP PASSW0RD from Google in order to be able to authenticate third-party apps (myaccount.google.com/apppasswords). &#10;Send a message on email with a link to reset_token template.&#10;Save the user's new password on DB.&#10;Add an .env file for credentials.">
+      <option name="closed" value="true" />
+      <created>1776786802959</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1776786802959</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Restructure the application to use Blueprints.&#10;Split up the application into more manageable sections.">
+      <option name="closed" value="true" />
+      <created>1776853749814</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1776853749814</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add configuration class based.">
+      <option name="closed" value="true" />
+      <created>1776853836737</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1776853836737</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Application Factory Pattern&#10;Wrap the application creation inside a function (create_app()).">
+      <option name="closed" value="true" />
+      <created>1776855533788</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1776855533788</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -209,6 +241,10 @@
     <MESSAGE value="Create, Update and Delete blog posts. &#10;Build a user interface for creating posts and updating the existing ones, including input validation. &#10;Implement user-specific post pages. &#10;Delete posts using a Bootstrap Modal." />
     <MESSAGE value="Delete Secret" />
     <MESSAGE value="Some pagination&#10;Add page interation for showing posts (show th number of 3 posts).&#10;Sort posts based on the newest ones.&#10;Add a new template for user posts. Navigation by click-ing the post's author name.&#10;Create a new route to filter the posts by author and list them." />
-    <option name="LAST_COMMIT_MESSAGE" value="Some pagination&#10;Add page interation for showing posts (show th number of 3 posts).&#10;Sort posts based on the newest ones.&#10;Add a new template for user posts. Navigation by click-ing the post's author name.&#10;Create a new route to filter the posts by author and list them." />
+    <MESSAGE value="Reset Password Via Email&#10;Use Flask-mail and itsdangerous packages.&#10;Add reset password request templates, forms and routes.&#10;Generate reset tokens with itsdangerous pkg that expires. &#10;Use Flask-mail to configure a gmail server.&#10;Generate an APP PASSW0RD from Google in order to be able to authenticate third-party apps (myaccount.google.com/apppasswords). &#10;Send a message on email with a link to reset_token template.&#10;Save the user's new password on DB.&#10;Add an .env file for credentials." />
+    <MESSAGE value="Restructure the application to use Blueprints.&#10;Split up the application into more manageable sections." />
+    <MESSAGE value="Add configuration class based." />
+    <MESSAGE value="Application Factory Pattern&#10;Wrap the application creation inside a function (create_app())." />
+    <option name="LAST_COMMIT_MESSAGE" value="Application Factory Pattern&#10;Wrap the application creation inside a function (create_app())." />
   </component>
 </project>
