@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="Application Factory Pattern&#10;Wrap the application creation inside a function (create_app()).">
+    <list default="true" id="70b384c2-1dfa-47e2-90c9-7a19cc8f4b57" name="Changes" comment="Error fixing.">
+      <change afterPath="$PROJECT_DIR$/flaskblog/errors/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/errors/handlers.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/flaskblog/main/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/flaskblog/posts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/templates/errors/403.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskblog/templates/errors/500.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/flaskblog/users/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/templates/user_posts.html" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/templates/user_posts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskblog/users/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/users/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskblog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskblog/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -228,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776855533788</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Error fixing.">
+      <option name="closed" value="true" />
+      <created>1776855882100</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1776855882100</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -245,6 +256,7 @@
     <MESSAGE value="Restructure the application to use Blueprints.&#10;Split up the application into more manageable sections." />
     <MESSAGE value="Add configuration class based." />
     <MESSAGE value="Application Factory Pattern&#10;Wrap the application creation inside a function (create_app())." />
-    <option name="LAST_COMMIT_MESSAGE" value="Application Factory Pattern&#10;Wrap the application creation inside a function (create_app())." />
+    <MESSAGE value="Error fixing." />
+    <option name="LAST_COMMIT_MESSAGE" value="Error fixing." />
   </component>
 </project>
